@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500..800;1,500..800&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        
+            <i class="fa-solid fa-bars" id="bars"><span>PLAYLIST</span></i>
+    <div class="musicPlayer">
+        <i class="fa-solid fa-music"></i>
+            <h1 id="heading">MUSIC PLAYER</h1>
+            <i class="fa-solid fa-music"></i>
+    
+    </div>
+            
+    
+    
+    </header>
+   
+    <section>
+        <div class="playlist">
+            <div class="playlist-song">
+                <img src="first_thumbnail.png">
+                <div class="song-details">
+                    <h2 id="blue">Hello BGM</h2>
+                    <h5 id="anup">Anup Rubens</h5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="second_thumbnail.png">
+                <div class="song-details">
+                    <h2 id="blue">Faded</h2>
+                    <H5 id="anup">Alan Walker</H5>
+                </div>
+            </div>
+            <div class="playlist-song">
+                <img src="third_thumnail.png">
+                <div class="song-details">
+                    <h2 id="blue">Let me love you</h2>
+                    <H5 id="anup">Justin Bieber</H5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="box1">
+                
+                <div class="artist_img">
+                   <!-- <img src="artist1.png" class="artist_Image"> -->
+
+                </div>
+                <h2 id="Artist_nam">Artist - Anup Rubens</h2>
+                <div class="volume">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" id="volume-range" onchange="volume()">
+                </div>
+              
+                
+            </div>
+            
+            <div class="box2">
+                
+                <div class="inner_box">
+                    <div class="thumbnail">
+                
+                    </div>
+                    <div class="detail">
+                        <h5 id="Song_name">TAQDEER-BGM</h5>
+                        <h4 id="Artist_name">Anup Rubens</h4>
+                    </div>
+                    <input type="range" id="duration" onchange="duration()">
+                    <div class="controls">
+                        
+                        <div class="prev-img">
+                           <img src="prev.png" alt="prev" id="prev-img" onclick="previousSong()">
+                        </div>
+                      <div class="play-pause">
+                        <img src="play.png" alt="play" id="play-pause" onclick="playPause()">
+                      </div>
+                      <div class="next-img">
+                        <img src="next.png" alt="next" id="next-img" onclick="nextSong()">
+                      </div>
+                        
+                       
+    
+                    </div>
+                </div>
+                
+            
+            </div>
+            
+            
+        </div>
+       
+
+    </section>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>
